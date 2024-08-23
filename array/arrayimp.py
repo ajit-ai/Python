@@ -3,8 +3,8 @@ minVal = my_array[0]
 print('minVal', minVal)
 
 for i in my_array:
-    print("Loop Min Value: ",minVal)
+    print("Loop Min Value: ", minVal)
     if i < minVal:
         minVal = i
 
-print('Lowest value:',minVal)
+print('Lowest value:', minVal)
