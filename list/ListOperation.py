@@ -1,12 +1,12 @@
 # Creating a List with 
 # the use of multiple values 
-List = ["Geeks", "For", "Geeks"] 
+List = ["A", "B", "C"] 
 print("\nList containing multiple values: ") 
 print(List)
 
 # Creating a Multi-Dimensional List 
 # (By Nesting a list inside a List) 
-List2 = [['Geeks', 'For'], ['Geeks']] 
+List2 = [['A', 'B'], ['C']] 
 print("\nMulti-Dimensional List: ") 
 print(List2) 
 

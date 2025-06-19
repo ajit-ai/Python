@@ -8,3 +8,4 @@ for i in my_array:
         minVal = i
 
 print('Lowest value:', minVal)
+print("Array size", len(my_array))

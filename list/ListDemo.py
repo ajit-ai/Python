@@ -6,7 +6,7 @@
 List = ["Ajit", "Kumar", "Jodhpur"] 
 print(List)
 
-List2 = [['Geeks', 'For'], ['Geeks']] 
+List2 = [['A', 'B'], ['C']] 
 print(List2) 
 
 

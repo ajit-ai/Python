@@ -1,0 +1,6 @@
+time_s,altitude_km,velocity_ms,acceleration_ms2
+0,0,0,
+1,10,200,200.0
+2,25,400,200.0
+3,50,600,200.0
+4,80,800,200.0
