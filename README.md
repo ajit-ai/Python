@@ -3,7 +3,7 @@
 
 git init
 
-dir add .
+git add .
 
 git commit -m "intiial work"
 
