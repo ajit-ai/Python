@@ -7,6 +7,15 @@ git add .
 
 git commit -m "initial work"
 
+git remote add origin https://github.com/ajit-ai/Python-Example.git
+
 git push origin master
 
-git remote ass origin https://github.com/ajit-ai/Python-Example.git
+git branch main
+
+git checkout main
+
+git pull origin master --allow-unrelated histories
+
+it push --set-upstream origin main
+
