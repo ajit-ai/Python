@@ -12,3 +12,11 @@ print(List2)
 
 list = [1,2,3,4,5],[1,2,3,4,5],[1.2,3,4,'Ajit']
 print(list)
+
+
+# get addition of two list
+
+a = [1, 2, 3, 4]
+b = [4, 5, 6, 7, 8]
+res = a + b
+print(res)

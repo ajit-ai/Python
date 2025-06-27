@@ -5,7 +5,7 @@ git init
 
 git add .
 
-git commit -m "intiial work"
+git commit -m "initial work"
 
 git push origin master
 

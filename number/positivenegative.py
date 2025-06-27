@@ -10,5 +10,6 @@ def main():
     else:
         print("The given number " + str(number_to_check) + " is neither Positive nor Negative")
 
+
 if __name__ == "__main__":
     main()

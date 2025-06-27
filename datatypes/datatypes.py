@@ -13,3 +13,6 @@ x = b"Geeks"
 x = bytearray(4)
 x = memoryview(bytes(6))
 x = None
+
+print("Type of x: ", type(x))
+print("Value of x: ", x)
