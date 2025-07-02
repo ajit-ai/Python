@@ -5,3 +5,9 @@
 *.coverage
 *.vscode
 *.git
+*.idea
+*.DS_Store
+*.egg-info
+*.pyo
+*.pyd
+*.qodo
