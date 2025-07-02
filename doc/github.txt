@@ -1,0 +1,42 @@
+=============================================================
+Github commit code to branch
+=============================================================
+git init
+
+git add .
+
+git commit -m "initial work"
+
+git remote add origin https://github.com/ajit-ai/Python.git
+
+git push origin master
+
+git branch main
+
+git checkout main
+
+git pull origin master --allow-unrelated histories
+
+it push --set-upstream origin main
+
+========================================================
+Github merge from user branch to master or main
+========================================================
+
+git checkout master
+
+git pull origin master
+
+git checkout main
+
+git pull origin master
+
+git checkout master
+
+git merge main
+
+git add resolved-file
+
+git commit
+
+git push origin master

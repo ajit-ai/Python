@@ -1,21 +1,5 @@
 # Python-Example
 
-
-git init
-
-git add .
-
-git commit -m "initial work"
-
-git remote add origin https://github.com/ajit-ai/Python-Example.git
-
-git push origin master
-
-git branch main
-
-git checkout main
-
-git pull origin master --allow-unrelated histories
-
-it push --set-upstream origin main
-
+A high-level language, used in web development, data science, automation, AI and more.
+Known for its readability, which means code is easier to write, understand and maintain.
+Backed by library support, so we don’t have to build everything from scratch, there’s probably a library that already does what we need.
