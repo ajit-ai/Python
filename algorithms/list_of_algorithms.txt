@@ -1,0 +1,165 @@
+Categories of Algorithms
+The algorithms are grouped into categories to cover a wide range of programming problems:
+
+Sorting Algorithms (ordering data)
+Searching Algorithms (finding elements)
+Graph Algorithms (networks, paths, connectivity)
+Dynamic Programming (optimization problems)
+Greedy Algorithms (locally optimal choices)
+Divide and Conquer (breaking problems into subproblems)
+String Algorithms (text processing)
+Mathematical Algorithms (numerical computations)
+Tree and Heap Algorithms (hierarchical data structures)
+Machine Learning and AI Algorithms (data-driven models, relevant to your PySpark/Snowflake context)
+
+
+1. Sorting Algorithms (10)
+Bubble Sort: Repeatedly swaps adjacent elements if out of order. O(n²). Simple but inefficient.
+Selection Sort: Selects the smallest element and places it in sorted position. O(n²). Easy to implement.
+Insertion Sort: Builds sorted array one element at a time. O(n²). Good for small datasets.
+Merge Sort: Divides array, sorts halves, and merges them. O(n log n). Stable and efficient.
+Quick Sort: Picks a pivot, partitions array, and recursively sorts. O(n log n) average. Fast in practice.
+Heap Sort: Uses a max-heap to sort elements. O(n log n). In-place but not stable.
+Counting Sort: Counts occurrences of values for non-comparison sorting. O(n+k). Good for small integer ranges.
+Radix Sort: Sorts digits from least to most significant. O(nk). Efficient for large datasets with fixed-length keys.
+Bucket Sort: Distributes elements into buckets and sorts them. O(n+k). Useful for uniform distributions.
+Tim Sort: Hybrid of merge and insertion sort, used in Python’s sorted(). O(n log n). Optimized for real-world data.
+
+2. Searching Algorithms (6)
+Linear Search: Checks each element sequentially. O(n). Simple but slow.
+Binary Search: Searches sorted array by halving the range. O(log n). Efficient for static data.
+Jump Search: Jumps ahead by fixed steps in sorted array. O(√n). Balances linear and binary search.
+Interpolation Search: Estimates position in sorted array based on value. O(log log n) average. Good for uniform distributions.
+Exponential Search: Finds range for binary search in sorted array. O(log n). Useful for unbounded lists.
+Ternary Search: Divides array into three parts for searching. O(log₃ n). Alternative to binary search.
+
+3. Graph Algorithms (15)
+Breadth-First Search (BFS): Explores graph level by level. O(V+E). Finds shortest paths in unweighted graphs.
+Depth-First Search (DFS): Explores graph depth-first. O(V+E). Useful for connectivity and cycles.
+Dijkstra’s Algorithm: Finds shortest path in weighted graph. O((V+E) log V). Used in routing.
+Bellman-Ford Algorithm: Handles negative weights for shortest paths. O(VE). Robust but slower.
+Floyd-Warshall Algorithm: Finds all-pairs shortest paths. O(V³). Dynamic programming approach.
+Kruskal’s Algorithm: Builds minimum spanning tree (MST) using edges. O(E log E). Greedy, for network design.
+Prim’s Algorithm: Builds MST starting from a vertex. O(V²) or O(E log V). Alternative to Kruskal’s.
+Topological Sort: Orders vertices in a directed acyclic graph (DAG). O(V+E). Used in scheduling.
+Kosaraju’s Algorithm: Finds strongly connected components in directed graph. O(V+E).
+Tarjan’s Algorithm: Finds strongly connected components or articulation points. O(V+E).
+A Search*: Heuristic-based shortest path algorithm. O(E log V). Used in pathfinding (e.g., games).
+Ford-Fulkerson Algorithm: Computes maximum flow in a flow network. O(E * |f|). Network optimization.
+Edmonds-Karp Algorithm: BFS-based max flow algorithm. O(VE²). Faster than Ford-Fulkerson.
+Johnson’s Algorithm: All-pairs shortest paths with negative weights. O(V² log V + VE).
+Bipartite Matching: Finds maximum matching in bipartite graphs. O(VE). Used in assignment problems.
+
+
+4. Dynamic Programming (10)
+Fibonacci Sequence: Computes nth Fibonacci number (your previous query). O(n). Optimization problem.
+Knapsack Problem (0/1): Maximizes value in a knapsack with weight constraints. O(nW). Resource allocation.
+Longest Common Subsequence (LCS): Finds longest subsequence in two strings. O(mn). String comparison.
+Longest Increasing Subsequence (LIS): Finds longest increasing subsequence in array. O(n log n). Sequence analysis.
+Matrix Chain Multiplication: Optimizes order of matrix multiplications. O(n³). Numerical computation.
+Edit Distance (Levenshtein): Computes minimum edits to transform one string into another. O(mn). Text processing.
+Subset Sum Problem: Checks if a subset sums to a target. O(n*sum). Combinatorial optimization.
+Rod Cutting: Maximizes profit by cutting a rod into pieces. O(n²). Price optimization.
+Coin Change Problem: Finds ways to make change for an amount. O(n*amount). Currency problems.
+Word Break Problem: Checks if a string can be segmented into dictionary words. O(n²). Text parsing.
+
+
+5. Greedy Algorithms (8)
+Activity Selection: Selects maximum non-overlapping activities. O(n log n). Scheduling.
+Huffman Coding: Builds optimal prefix-free codes for compression. O(n log n). Data compression.
+Fractional Knapsack: Maximizes value in a knapsack with fractional items. O(n log n). Optimization.
+Job Sequencing with Deadlines: Maximizes profit from jobs within deadlines. O(n log n). Scheduling.
+Minimum Spanning Tree (Prim’s/Kruskal’s): Covered in graph algorithms.
+Greedy Graph Coloring: Assigns colors to graph vertices. O(V+E). Graph partitioning.
+Interval Scheduling Maximization: Selects maximum compatible intervals. O(n log n).
+Dijkstra’s Algorithm: Covered in graph algorithms (greedy approach).
+
+6. Divide and Conquer (8)
+Merge Sort: Covered in sorting.
+Quick Sort: Covered in sorting.
+Binary Search: Covered in searching.
+Strassen’s Matrix Multiplication: Multiplies matrices faster than naive method. O(n^2.807).
+Closest Pair of Points: Finds closest pair of points in a plane. O(n log n). Geometric problems.
+Karatsuba Multiplication: Fast multiplication for large numbers. O(n^1.585). Numerical computation.
+Fast Fourier Transform (FFT): Computes discrete Fourier transform. O(n log n). Signal processing.
+Maximum Subarray Sum (Kadane’s): Finds maximum sum subarray. O(n). Financial analysis.
+
+7. String Algorithms (10)
+KMP Algorithm: Efficient string matching. O(n+m). Text search.
+Rabin-Karp Algorithm: Uses hashing for string matching. O(n+m) average. Pattern matching.
+Z Algorithm: Finds all occurrences of a pattern in a string. O(n+m). String processing.
+Boyer-Moore Algorithm: Fast string matching with preprocessing. O(n/m) best case. Text search.
+Longest Palindromic Substring: Finds longest palindrome in a string. O(n²) or O(n) with Manacher’s.
+Manacher’s Algorithm: Optimized for longest palindromic substring. O(n).
+Trie (Prefix Tree): Stores strings for fast prefix queries. O(m). Autocomplete systems.
+Suffix Array: Sorts all suffixes of a string. O(n log n). Text indexing.
+Aho-Corasick Algorithm: Matches multiple patterns in text. O(n+m+k). Multi-pattern search.
+Levenshtein Distance: Covered in dynamic programming.
+
+8. Mathematical Algorithms (10)
+Euclidean GCD: Computes greatest common divisor. O(log min(a,b)). Number theory.
+Sieve of Eratosthenes: Finds all primes up to n. O(n log log n). Prime generation.
+Modular Exponentiation: Computes (a^b) % m efficiently. O(log b). Cryptography.
+Prime Factorization: Finds prime factors of a number. O(√n). Number theory.
+Extended Euclidean Algorithm: Finds GCD and Bézout’s coefficients. O(log min(a,b)).
+Chinese Remainder Theorem: Solves system of modular equations. O(k log m).
+Fast Power Algorithm: Computes a^b efficiently. O(log n). Exponentiation.
+Lucas-Lehmer Test: Tests if a Mersenne number is prime. O(log n). Prime testing.
+Miller-Rabin Primality Test: Probabilistic primality test. O(k log n). Cryptography.
+Factorial: Computes n!. O(n). Combinatorial problems.
+
+9. Tree and Heap Algorithms (10)
+Binary Tree Traversal (Inorder): Visits nodes in sorted order. O(n). Tree processing.
+Binary Tree Traversal (Preorder/Postorder): Different traversal orders. O(n).
+Binary Search Tree (BST) Operations: Insert, delete, search. O(h) where h is height.
+AVL Tree: Self-balancing BST. O(log n). Efficient searches.
+Red-Black Tree: Self-balancing BST. O(log n). Used in databases.
+Heapify: Builds a heap from an array. O(n). Priority queues.
+Heap Push/Pop: Maintains heap properties. O(log n). Priority queue operations.
+Segment Tree: Supports range queries and updates. O(log n). Range-based problems.
+Fenwick Tree (Binary Indexed Tree): Efficient prefix sum queries. O(log n).
+Trie: Covered in string algorithms.
+
+10. Machine Learning and AI Algorithms (11)
+Linear Regression: Fits a linear model to data. O(n). Predictive modeling.
+Logistic Regression: Classifies binary outcomes. O(n). Classification.
+K-Means Clustering: Groups data into k clusters. O(nk). Unsupervised learning.
+Decision Tree: Builds a tree for classification/regression. O(n log n). Interpretable models.
+Random Forest: Ensemble of decision trees. O(n log n * t). Robust classification.
+Gradient Descent: Optimizes model parameters. O(iter * n). Machine learning training.
+K-Nearest Neighbors (KNN): Classifies based on nearest neighbors. O(n). Simple classification.
+Naive Bayes: Probabilistic classifier. O(n). Text classification.
+Support Vector Machine (SVM): Finds optimal hyperplane for classification. O(n²). Robust to noise.
+Backpropagation: Trains neural networks. O(n * epochs). Deep learning.
+Apriori Algorithm: Finds frequent itemsets for association rules. O(2^d). Market basket analysis.
+
+
+Categories and List of 100 Algorithms
+
+The algorithms are organized into 10 categories:
+
+Sorting Algorithms (10)
+Searching Algorithms (6)
+Graph Algorithms (15)
+Dynamic Programming (10)
+Greedy Algorithms (8)
+Divide and Conquer (8)
+String Algorithms (10)
+Mathematical Algorithms (10)
+Tree and Heap Algorithms (10)
+Machine Learning and AI Algorithms (11)
+
+
+
+
+
+1. Sorting Algorithms (10)
+2. Searching Algorithms (6)
+3. Graph Algorithms (15)
+4. Dynamic Programming (10)
+5. Greedy Algorithms (8)
+6. Divide and Conquer (8)
+7. String Algorithms (10)
+8. Mathematical Algorithms (10)
+9. Tree and Heap Algorithms (10)
+10. Machine Learning and AI Algorithms (11)
