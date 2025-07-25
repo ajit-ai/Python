@@ -1,0 +1,43 @@
+# A tuple is a read-only data structure for storing collections that
+# don't need to be changed. You create one using ( and ) characters.
+
+# Create a tuple with ( and )
+my_tuple = (1, 2, "hello", 3.14, False, "hello")
+
+print(type(my_tuple))
+
+# Access an item by index using [ and ]. Indexes start at 0
+print(my_tuple[0])
+
+print(my_tuple[3])
+
+#print(my_tuple[10])  # IndexError.
+
+# Access a container from right-to-left
+print(my_tuple[-1])
+print(my_tuple[-3])
+
+# Count number of items in a tuple
+my_tuple.count("hello")
+my_tuple.count(3.14)
+my_tuple.count("blahblah")
+
+# Search and get the index of an item
+my_tuple.index("hello")
+
+my_tuple.index(3.14)
+my_tuple.index(False)
+#my_tuple.index("blah")  # ValueError.
+
+
+# Trying to change the value of an item in a tuple causes an error.
+#my_tuple[2] = "newvalue"  # TypeError.
+
+
+# Warning: If creating a tuple with only 1 item, you need to use this special syntax with a comma.
+my_tuple2 = (42, )
+type(my_tuple2)  # is a 'tuple' type
+
+# If you forget the comma, then Python doesn't create the tuple.
+fake_tuple = (42)
+type(fake_tuple)  # is an 'int' type
