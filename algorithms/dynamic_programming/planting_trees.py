@@ -47,3 +47,9 @@ def planting_trees(trees, length, width):
             )
 
     return cmatrix[n_pairs][n_pairs]
+
+
+#call main method
+if __name__ == '__main__':
+    print(planting_trees([1, 2, 3, 4, 5], 10, 10))
+    

@@ -26,3 +26,6 @@ def get_maximum_value(items, capacity):
             dp[cur_weight] = max(dp[cur_weight], item.value + dp[cur_weight - item.weight])
     return dp[capacity]
 
+#call main method
+if __name__ == '__main__':
+    print(get_maximum_value([Item(60, 5), Item(50, 3), Item(70, 4), Item(30, 2)], 5))

@@ -70,3 +70,10 @@ def word_range(word):
         for c in [chr(x) for x in range(ord('a'), ord('z') + 1)]:
             if c != temp:
                 yield word[:ind] + c + word[ind + 1:]
+
+
+#call main method
+if __name__ == '__main__':
+    print(ladder_length("hit", "cog", ["hot", "dot", "dog", "lot", "log"]))
+    print(ladder_length("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]))
+    print(ladder_length("hot", "dog", ["hot", "dog"]))

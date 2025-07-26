@@ -120,3 +120,17 @@ class BinaryHeap(AbstractHeap):
         self.heap.pop()
         self.perc_down(1)
         return ret
+
+#call main method
+if __name__ == '__main__':
+    bh = BinaryHeap()
+    bh.insert(4)
+    bh.insert(50)
+    bh.insert(7)
+    bh.insert(55)
+    bh.insert(90)
+    bh.insert(87)
+    bh.insert(2)
+    print(bh.heap)
+    bh.remove_min()
+    print(bh.heap)

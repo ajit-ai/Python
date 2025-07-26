@@ -44,3 +44,7 @@ def longest_common_subsequence(s_1, s_2):
                 mat[i][j] = max(mat[i - 1][j], mat[i][j - 1])
 
     return mat[m][n]
+
+#call main method
+if __name__ == '__main__':
+    print(longest_common_subsequence('abcdgh', 'aedfhr'))

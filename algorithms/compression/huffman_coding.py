@@ -248,3 +248,9 @@ if __name__ == '__main__':
             print("Decoded content:", f.read())
     except Exception as e:
         print(f"Error in main: {str(e)}")
+
+
+
+#call main method
+if __name__ == '__main__':
+    pass

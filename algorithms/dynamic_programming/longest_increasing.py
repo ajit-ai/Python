@@ -115,3 +115,10 @@ def longest_increasing_subsequence_optimized2(sequence):
         ans = max(ans, cur)
         update(1, 0, length-1, i, cur)
     return ans
+
+
+#call main method
+if __name__ == '__main__':
+    print(longest_increasing_subsequence([10, 9, 2, 5, 3, 7, 101, 18]))
+    #print(longest_increasing_subsequence_optimized([10, 9, 2, 5, 3, 7, 101, 18]))
+    #print(longest_increasing_subsequence_optimized2([10, 9, 2, 5, 3, 7, 101, 18]))

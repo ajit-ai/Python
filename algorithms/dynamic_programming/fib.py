@@ -89,4 +89,8 @@ def fib_iter(n):
         fib_2 = res
     return res
 
-# print(fib_iter(100)) # => 354224848179261915075
+#call main method to get result
+if __name__ == '__main__':
+    print(fib_recursive(35))
+    print(fib_list(100))
+

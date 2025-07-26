@@ -17,3 +17,8 @@ def house_robber(houses):
     for house in houses:
         last, now = now, max(last + house, now)
     return now
+
+#call main method to get result
+if __name__ == '__main__':
+    print(house_robber([1, 2, 3, 1]))
+    print(house_robber([2, 7, 9, 3, 1]))

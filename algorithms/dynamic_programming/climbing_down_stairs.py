@@ -60,6 +60,7 @@ def downwards(steps):
 
 #find the number of ways to climb the stairs
 
+
 print(climb_stairs(3))
 print(climb_stairs_optimized(3))
 

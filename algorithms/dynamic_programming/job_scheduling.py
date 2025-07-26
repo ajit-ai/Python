@@ -66,3 +66,12 @@ def schedule(job):
         table[i] = max(incl_prof, table[i - 1])
 
     return table[length-1]
+
+
+#call main method
+if __name__ == '__main__':
+    job = [Job(1, 2, 50), Job(3, 5, 20), Job(6, 19, 100), Job(2, 100, 200)]
+    print(schedule(job))
+
+
+

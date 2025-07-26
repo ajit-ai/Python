@@ -65,3 +65,9 @@ def maze_search(maze):
 
     return -1 
 
+
+#call main method
+if __name__ == '__main__':
+    print(maze_search([[1,0,1,1,1,1], [1,0,1,0,1,0], [1,0,1,0,1,1], [1,1,1,0,1,1]]))
+    print(maze_search([[1,0,0], [0,1,1], [0,1,1]]))
+

@@ -53,3 +53,10 @@ def int_divide(decompose):
             else:
                 arr[i][j] = arr[i][j - 1] + arr[i - j][j]
     return arr[decompose][decompose]
+
+#call main method
+if __name__ == '__main__':
+    print(int_divide(4))
+    print(int_divide(7))
+    print(int_divide(10))
+

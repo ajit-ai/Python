@@ -109,3 +109,10 @@ def get_factors_iterative2(n):
             n //= x
         else:
             x += 1
+
+
+#call main method
+if __name__ == '__main__':
+    print(get_factors(32))
+    print(get_factors_iterative1(32))
+    print(get_factors_iterative2(32))

@@ -38,3 +38,10 @@ def bfs(grid, matrix, i, j, count):
                 matrix[k][l][0] += step+1
                 matrix[k][l][1] = count+1
                 q.append((k, l, step+1))
+
+
+#call main method
+if __name__ == '__main__':
+    print(shortest_distance([[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]))
+    print(shortest_distance([[1,0,0],[0,0,0],[0,0,0]]))
+    print(shortest_distance([[0,0,0],[0,0,0],[0,0,0]]))

@@ -56,3 +56,8 @@ def egg_drop(n, k):
 
     # eggFloor[n][k] holds the result
     return egg_floor[n][k]
+
+#call main method
+if __name__ == '__main__':
+    print(egg_drop(2, 10))
+    #print(egg_drop(3, 14))

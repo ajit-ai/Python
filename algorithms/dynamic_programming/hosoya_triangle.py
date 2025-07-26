@@ -54,3 +54,7 @@ def hosoya_testing(height):
         for j in range(i + 1):
             res.append(hosoya(i, j))
     return res
+
+#call main method to get result
+if __name__ == '__main__':
+    print_hosoya(6)

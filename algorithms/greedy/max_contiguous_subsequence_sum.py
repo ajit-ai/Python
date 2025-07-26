@@ -40,3 +40,11 @@ def max_contiguous_subsequence_sum(arr) -> int:
         max_till_now = max(max_till_now, curr_sub_sum)
 
     return max_till_now
+
+
+#call main method
+if __name__ == '__main__':
+    print(max_contiguous_subsequence_sum([-2, 3, 8, -1, 4]))
+    print(max_contiguous_subsequence_sum([-1, 1, 0]))
+    print(max_contiguous_subsequence_sum([-1, -3, -4]))
+    print(max_contiguous_subsequence_sum([-2, 3, 8, -12, 8, 4]))

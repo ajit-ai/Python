@@ -64,3 +64,10 @@ def subarray_with_max_product(arr):
 
     else:
         print(f"max_product_so_far: {product_so_far},{arr[so_far_start_i:so_far_end_i + 1]}")
+
+
+# Test
+subarray_with_max_product([2, 3, 6, -1, -1, 9, 5])
+subarray_with_max_product([-2, -3, 6, 0, -7, -5])
+subarray_with_max_product([-4, -3, -2, -1])
+subarray_with_max_product([-3, 0, 1])

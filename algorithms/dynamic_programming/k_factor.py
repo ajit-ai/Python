@@ -83,3 +83,8 @@ def find_k_factor(length, k_factor):
                 mat[i][j][3]=0
 
     return sum(mat[length][k_factor])
+
+#calling the function
+print(find_k_factor(4,1))
+print(find_k_factor(7,1))
+print(find_k_factor(10,2))

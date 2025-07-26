@@ -59,3 +59,14 @@ def is_match(str_a, str_b):
                     matches[i][j] |= matches[i - 1][j]
 
     return matches[-1][-1]
+
+
+#call main method
+if __name__ == '__main__':
+    print(is_match('aa', 'a'))
+    print(is_match('aa', 'aa'))
+    print(is_match('aaa', 'aa'))
+    print(is_match('aa', 'a*'))
+    print(is_match('aa', '.*'))
+    print(is_match('ab', '.*'))
+    print(is_match('aab', 'c*a*b'))

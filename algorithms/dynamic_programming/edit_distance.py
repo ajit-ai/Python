@@ -67,3 +67,8 @@ def edit_distance(word_a, word_b):
             edit[i][j] = min(edit[i - 1][j] + 1, edit[i][j - 1] + 1, edit[i - 1][j - 1] + cost)
 
     return edit[-1][-1]  # this is the same as edit[length_a][length_b]
+
+
+#class main method
+if __name__ == '__main__':
+    print(edit_distance("FOOD", "MONEY"))

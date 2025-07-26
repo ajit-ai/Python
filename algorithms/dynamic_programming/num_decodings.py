@@ -54,3 +54,9 @@ def num_decodings2(enc_mes):
             # other case '01, 09, 27'
             stack.append(stack[-1])
     return stack[-1]
+
+
+# test
+enc_mes = "12"
+print(num_decodings(enc_mes))
+print(num_decodings2(enc_mes))
