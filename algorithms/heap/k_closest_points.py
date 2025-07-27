@@ -46,3 +46,8 @@ def k_closest(points, k, origin=(0, 0)):
 def distance(point, origin=(0, 0)):
     """ Calculates the distance for a point from origo"""
     return (point[0] - origin[0])**2 + (point[1] - origin[1])**2
+
+
+# Test
+points = [(3, 3), (5, -1), (-2, 4)]
+print(k_closest(points, 2))
