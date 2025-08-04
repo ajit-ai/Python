@@ -19,3 +19,18 @@ Set Types:	set, frozenset
 Boolean Type:	bool
 Binary Types:	bytes, bytearray, memoryview
 None Type:	NoneType
+
+
+### Python Library
+
+
+1. Numpy
+2. Pandas
+3. Matplotlib
+4. Scikit-learn
+5. TensorFlow
+6. PyTorch
+7. OpenCV
+8. Keras
+
+
