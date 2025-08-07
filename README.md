@@ -27,10 +27,20 @@ None Type:	NoneType
 1. Numpy
 2. Pandas
 3. Matplotlib
-4. Scikit-learn
-5. TensorFlow
-6. PyTorch
-7. OpenCV
-8. Keras
+
+
+### Machine Learning
+1. Scikit-learn
+2. TensorFlow
+3. PyTorch
+4. OpenCV
+5. Keras
+
+
+### Deep Learning
+
+### Generative AI
+
+
 
 
