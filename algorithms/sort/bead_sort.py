@@ -24,3 +24,4 @@ def bead_sort(arr):
         for col in range(len(arr)):
             row[col] = 1 if col < sum_beads else 0
 
+print(bead_sort([5, 3, 1, 2, 4]))
