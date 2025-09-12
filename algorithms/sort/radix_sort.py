@@ -30,3 +30,8 @@ def radix_sort(arr, simulation=False):
         position *= 10
     return arr
     
+# Example usage
+if __name__ == "__main__":
+    arr = [170, 45, 75, 90, 802, 24, 2, 66]
+    sorted_arr = radix_sort(arr, simulation=True)
+    print("Sorted array:", sorted_arr)

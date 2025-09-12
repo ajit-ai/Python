@@ -38,3 +38,9 @@ def merge(left, right, merged):
 
     # Return result
     # return merged # do not return anything, as it is replacing inplace.
+
+# Example usage
+if __name__ == "__main__":
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    sorted_arr = merge_sort(arr)
+    print("Sorted array:", sorted_arr)

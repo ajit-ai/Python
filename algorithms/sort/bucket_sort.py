@@ -26,3 +26,9 @@ def next_sort(arr):
             j = j - 1
         arr[j + 1] = key
     return arr
+
+# Example usage
+if __name__ == "__main__":
+    arr = [42, 32, 23, 52, 25, 47, 51]
+    sorted_arr = bucket_sort(arr)
+    print("Sorted array:", sorted_arr)
