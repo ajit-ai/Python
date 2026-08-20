@@ -80,7 +80,6 @@ def construct_tree(pre: list, post: list, size: int):
         and postorder array.
     """
 
-    global pre_index
     root = construct_tree_util(pre, post, 0, size-1, size)
 
     return print_inorder(root)

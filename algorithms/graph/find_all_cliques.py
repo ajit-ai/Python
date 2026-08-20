@@ -15,9 +15,7 @@ def find_all_cliques(edges):
     """
 
     def expand_clique(candidates, nays):
-        nonlocal compsub
         if not candidates and not nays:
-            nonlocal solutions
             solutions.append(compsub.copy())
         else:
             for selected in candidates.copy():
