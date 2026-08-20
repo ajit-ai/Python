@@ -1,9 +1,5 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'search'))
-
-from binary_search import binary_search, binary_search_recur
-from linear_search import linear_search
+from algorithms.search.binary_search import binary_search, binary_search_recur
+from algorithms.search.linear_search import linear_search
 
 
 class TestBinarySearch:

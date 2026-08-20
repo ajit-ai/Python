@@ -1,9 +1,5 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'stack'))
-
-from stack import ArrayStack, LinkedListStack
-from valid_parenthesis import is_valid
+from algorithms.stack.stack import ArrayStack, LinkedListStack
+from algorithms.stack.valid_parenthesis import is_valid
 
 
 class TestArrayStack:

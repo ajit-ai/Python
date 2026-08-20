@@ -1,21 +1,17 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'arrays'))
-
-from two_sum import two_sum
-from flatten import flatten, flatten_iter
-from remove_duplicates import remove_duplicates
-from rotate import rotate_v1, rotate_v2, rotate_v3
-from move_zeros import move_zeros
-from plus_one import plus_one_v1, plus_one_v2, plus_one_v3
-from max_ones_index import max_ones_index
-from limit import limit
-from three_sum import three_sum
-from summarize_ranges import summarize_ranges
-from missing_ranges import missing_ranges
-from trimmean import trimmean
-from top_1 import top_1
-from delete_nth import delete_nth, delete_nth_naive
+from algorithms.arrays.two_sum import two_sum
+from algorithms.arrays.flatten import flatten, flatten_iter
+from algorithms.arrays.remove_duplicates import remove_duplicates
+from algorithms.arrays.rotate import rotate_v1, rotate_v2, rotate_v3
+from algorithms.arrays.move_zeros import move_zeros
+from algorithms.arrays.plus_one import plus_one_v1, plus_one_v2, plus_one_v3
+from algorithms.arrays.max_ones_index import max_ones_index
+from algorithms.arrays.limit import limit
+from algorithms.arrays.three_sum import three_sum
+from algorithms.arrays.summarize_ranges import summarize_ranges
+from algorithms.arrays.missing_ranges import missing_ranges
+from algorithms.arrays.trimmean import trimmean
+from algorithms.arrays.top_1 import top_1
+from algorithms.arrays.delete_nth import delete_nth, delete_nth_naive
 
 
 class TestTwoSum:

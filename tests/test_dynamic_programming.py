@@ -1,15 +1,11 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'dynamic_programming'))
-
-from coin_change import count as coin_count
-from edit_distance import edit_distance
-from knapsack import Item, get_maximum_value
-from max_subarray import max_subarray
-from climbing_down_stairs import climb_stairs, climb_stairs_optimized
-from longest_common_subsequence import longest_common_subsequence
-from longest_increasing import longest_increasing_subsequence
-from buy_sell_stock import max_profit_naive, max_profit_optimized
+from algorithms.dynamic_programming.coin_change import count as coin_count
+from algorithms.dynamic_programming.edit_distance import edit_distance
+from algorithms.dynamic_programming.knapsack import Item, get_maximum_value
+from algorithms.dynamic_programming.max_subarray import max_subarray
+from algorithms.dynamic_programming.climbing_down_stairs import climb_stairs, climb_stairs_optimized
+from algorithms.dynamic_programming.longest_common_subsequence import longest_common_subsequence
+from algorithms.dynamic_programming.longest_increasing import longest_increasing_subsequence
+from algorithms.dynamic_programming.buy_sell_stock import max_profit_naive, max_profit_optimized
 
 
 class TestCoinChange:

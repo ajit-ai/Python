@@ -1,15 +1,11 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'backtracking'))
-
-from anagram import anagram, anagram2
-from combination_sum import combination_sum
-from generate_parenthesis import generate_parenthesis_v1, generate_parenthesis_v2
-from letter_combination import letter_combinations
-from permute import permute
-from subsets import subsets, subsets_v2
-from palindrome_partitioning import palindromic_substrings
-from pattern_match import pattern_match
+from algorithms.backtracking.anagram import anagram, anagram2
+from algorithms.backtracking.combination_sum import combination_sum
+from algorithms.backtracking.generate_parenthesis import generate_parenthesis_v1, generate_parenthesis_v2
+from algorithms.backtracking.letter_combination import letter_combinations
+from algorithms.backtracking.permute import permute
+from algorithms.backtracking.subsets import subsets, subsets_v2
+from algorithms.backtracking.palindrome_partitioning import palindromic_substrings
+from algorithms.backtracking.pattern_match import pattern_match
 
 
 class TestAnagram:

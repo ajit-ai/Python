@@ -1,9 +1,5 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'map'))
-
-from is_anagram import is_anagram
-from is_isomorphic import is_isomorphic
+from algorithms.map.is_anagram import is_anagram
+from algorithms.map.is_isomorphic import is_isomorphic
 
 
 class TestIsAnagram:

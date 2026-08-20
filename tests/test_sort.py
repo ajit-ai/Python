@@ -1,14 +1,10 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'sort'))
-
-from bubble_sort import bubble_sort
-from merge_sort import merge_sort
-from quick_sort import quick_sort
-from insertion_sort import insertion_sort
-from selection_sort import selection_sort
-from counting_sort import counting_sort
-from shell_sort import shell_sort
+from algorithms.sort.bubble_sort import bubble_sort
+from algorithms.sort.merge_sort import merge_sort
+from algorithms.sort.quick_sort import quick_sort
+from algorithms.sort.insertion_sort import insertion_sort
+from algorithms.sort.selection_sort import selection_sort
+from algorithms.sort.counting_sort import counting_sort
+from algorithms.sort.shell_sort import shell_sort
 
 
 class TestBubbleSort:

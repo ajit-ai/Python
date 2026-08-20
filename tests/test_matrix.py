@@ -1,9 +1,5 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'matrix'))
-
-from rotate_image import rotate
-from spiral_traversal import spiral_traversal
+from algorithms.matrix.rotate_image import rotate
+from algorithms.matrix.spiral_traversal import spiral_traversal
 
 
 class TestRotateImage:
@@ -11,12 +7,12 @@ class TestRotateImage:
         matrix = [
             [1, 2, 3],
             [4, 5, 6],
-            [7, 8, 9]
+            [7, 8, 9],
         ]
         expected = [
             [7, 4, 1],
             [8, 5, 2],
-            [9, 6, 3]
+            [9, 6, 3],
         ]
         assert rotate(matrix) == expected
 
@@ -37,7 +33,7 @@ class TestSpiralTraversal:
         matrix = [
             [1, 2, 3],
             [4, 5, 6],
-            [7, 8, 9]
+            [7, 8, 9],
         ]
         assert spiral_traversal(matrix) == [1, 2, 3, 6, 9, 8, 7, 4, 5]
 

@@ -1,18 +1,14 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'bit_manipulation'))
-
-from add_bitwise_operator import add_bitwise_operator
-from binary_gap import binary_gap, binary_gap_improved
-from bit_operation import get_bit, set_bit, clear_bit, update_bit
-from count_flips_to_convert import count_flips_to_convert
-from count_ones import count_ones_recur, count_ones_iter
-from find_missing_number import find_missing_number, find_missing_number2
-from power_of_two import is_power_of_two
-from reverse_bits import reverse_bits
-from single_number import single_number
-from has_alternative_bit import has_alternative_bit, has_alternative_bit_fast
-from swap_pair import swap_pair
+from algorithms.bit_manipulation.add_bitwise_operator import add_bitwise_operator
+from algorithms.bit_manipulation.binary_gap import binary_gap, binary_gap_improved
+from algorithms.bit_manipulation.bit_operation import get_bit, set_bit, clear_bit, update_bit
+from algorithms.bit_manipulation.count_flips_to_convert import count_flips_to_convert
+from algorithms.bit_manipulation.count_ones import count_ones_recur, count_ones_iter
+from algorithms.bit_manipulation.find_missing_number import find_missing_number, find_missing_number2
+from algorithms.bit_manipulation.power_of_two import is_power_of_two
+from algorithms.bit_manipulation.reverse_bits import reverse_bits
+from algorithms.bit_manipulation.single_number import single_number
+from algorithms.bit_manipulation.has_alternative_bit import has_alternative_bit, has_alternative_bit_fast
+from algorithms.bit_manipulation.swap_pair import swap_pair
 
 
 class TestAddBitwiseOperator:
@@ -31,7 +27,7 @@ class TestAddBitwiseOperator:
 
 class TestBinaryGap:
     def test_basic(self):
-        assert binary_gap(9) == 3  # 1001, gap between bit positions
+        assert binary_gap(9) == 3
 
     def test_single_one(self):
         assert binary_gap(1) == 0
@@ -46,19 +42,19 @@ class TestBinaryGap:
 
 class TestBitOperation:
     def test_get_bit(self):
-        assert get_bit(6, 1) is True  # 110, bit 1 is 1
-        assert get_bit(6, 2) is True  # 110, bit 2 is 1
-        assert get_bit(6, 0) is False  # 110, bit 0 is 0
+        assert get_bit(6, 1) is True
+        assert get_bit(6, 2) is True
+        assert get_bit(6, 0) is False
 
     def test_set_bit(self):
-        assert set_bit(4, 0) == 5  # 100 -> 101
+        assert set_bit(4, 0) == 5
 
     def test_clear_bit(self):
-        assert clear_bit(7, 1) == 5  # 111 -> 101
+        assert clear_bit(7, 1) == 5
 
     def test_update_bit(self):
-        assert update_bit(5, 1, 1) == 7  # 101 -> 111
-        assert update_bit(7, 1, 0) == 5  # 111 -> 101
+        assert update_bit(5, 1, 1) == 7
+        assert update_bit(7, 1, 0) == 5
 
 
 class TestCountFlipsToConvert:
@@ -135,11 +131,11 @@ class TestSingleNumber:
 
 class TestHasAlternativeBit:
     def test_alternating(self):
-        assert has_alternative_bit(5) is True  # 101
-        assert has_alternative_bit(10) is True  # 1010
+        assert has_alternative_bit(5) is True
+        assert has_alternative_bit(10) is True
 
     def test_not_alternating(self):
-        assert has_alternative_bit(7) is False  # 111
+        assert has_alternative_bit(7) is False
 
     def test_fast(self):
         assert has_alternative_bit_fast(5) is True
@@ -147,8 +143,8 @@ class TestHasAlternativeBit:
 
 class TestSwapPair:
     def test_basic(self):
-        assert swap_pair(1) == 2  # 01 -> 10
-        assert swap_pair(2) == 1  # 10 -> 01
+        assert swap_pair(1) == 2
+        assert swap_pair(2) == 1
 
     def test_zero(self):
         assert swap_pair(0) == 0

@@ -1,8 +1,4 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'factorial'))
-
-from factorial import get_recursive_factorial, get_iterative_factorial
+from algorithms.factorial.factorial import get_recursive_factorial, get_iterative_factorial
 
 
 class TestFactorial:

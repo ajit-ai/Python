@@ -1,10 +1,8 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'compression'))
-
-from rle_compression import encode_rle, decode_rle
-from elias import (elias_gamma_encode, elias_gamma_decode,
-                   elias_delta_encode, elias_delta_decode)
+from algorithms.compression.rle_compression import encode_rle, decode_rle
+from algorithms.compression.elias import (
+    elias_gamma_encode, elias_gamma_decode,
+    elias_delta_encode, elias_delta_decode,
+)
 
 
 class TestRLECompression:

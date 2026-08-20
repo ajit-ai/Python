@@ -1,20 +1,16 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'strings'))
-
-from fizzbuzz import fizzbuzz, fizzbuzz_with_helper_func
-from is_palindrome import is_palindrome, is_palindrome_reverse, remove_punctuation, string_reverse
-from caesar_cipher import caesar_cipher
-from check_pangram import check_pangram
-from atbash_cipher import atbash
-from longest_common_prefix import longest_common_prefix_v1, longest_common_prefix_v2
-from reverse_string import recursive, iterative, pythonic, ultra_pythonic
-from group_anagrams import group_anagrams
-from first_unique_char import first_unique_char
-from int_to_roman import int_to_roman
-from roman_to_int import roman_to_int
-from reverse_vowel import reverse_vowel
-from reverse_words import reverse_words
+from algorithms.strings.fizzbuzz import fizzbuzz, fizzbuzz_with_helper_func
+from algorithms.strings.is_palindrome import is_palindrome, is_palindrome_reverse, remove_punctuation, string_reverse
+from algorithms.strings.caesar_cipher import caesar_cipher
+from algorithms.strings.check_pangram import check_pangram
+from algorithms.strings.atbash_cipher import atbash
+from algorithms.strings.longest_common_prefix import longest_common_prefix_v1, longest_common_prefix_v2
+from algorithms.strings.reverse_string import recursive, iterative, pythonic, ultra_pythonic
+from algorithms.strings.group_anagrams import group_anagrams
+from algorithms.strings.first_unique_char import first_unique_char
+from algorithms.strings.int_to_roman import int_to_roman
+from algorithms.strings.roman_to_int import roman_to_int
+from algorithms.strings.reverse_vowel import reverse_vowel
+from algorithms.strings.reverse_words import reverse_words
 
 
 class TestFizzBuzz:

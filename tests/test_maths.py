@@ -1,13 +1,9 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'maths'))
-
-from gcd import gcd, lcm, trailing_zero, gcd_bit
-from prime_check import prime_check
-from pythagoras import pythagoras
-from base_conversion import int_to_base, base_to_int
-from power import power, power_recur
-from combination import combination, combination_memo
+from algorithms.maths.gcd import gcd, lcm, trailing_zero, gcd_bit
+from algorithms.maths.prime_check import prime_check
+from algorithms.maths.pythagoras import pythagoras
+from algorithms.maths.base_conversion import int_to_base, base_to_int
+from algorithms.maths.power import power, power_recur
+from algorithms.maths.combination import combination, combination_memo
 
 
 class TestGcd:

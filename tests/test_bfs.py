@@ -1,8 +1,4 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'breath_first_search'))
-
-from count_islands import count_islands
+from algorithms.bfs.count_islands import count_islands
 
 
 class TestCountIslands:

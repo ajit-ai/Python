@@ -1,10 +1,6 @@
-import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'algorithms', 'linkedlist'))
-
-from is_cyclic import Node as CyclicNode, is_cyclic
-from merge_two_list import Node as ListNode, merge_two_list
-from reverse import reverse_list
+from algorithms.linkedlist.is_cyclic import Node as CyclicNode, is_cyclic
+from algorithms.linkedlist.merge_two_list import Node as ListNode, merge_two_list
+from algorithms.linkedlist.reverse import reverse_list
 
 
 def build_list(values):

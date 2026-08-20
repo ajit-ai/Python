@@ -3,24 +3,28 @@ from functools import reduce
 
 
 def compound_interest_1(p, r, n, t):
-    return p * (1 + r/n) ** (n*t)
+    return p * (1 + r / n) ** (n * t)
+
 
 def compound_interest_2(p, r, n, t):
     amount = p
     for _ in range(n * t):
-        amount *= (1 + r/n)
+        amount *= (1 + r / n)
     return amount
+
 
 def compound_interest_3(p, r, n, t):
     if t == 0:
         return p
-    return compound_interest_3(p * (1 + r/n) ** n, r, n, t-1)
+    return compound_interest_3(p * (1 + r / n) ** n, r, n, t - 1)
+
 
 def compound_interest_4(p, r, n, t):
-    return p * math.pow((1 + r/n), n*t)
+    return p * math.pow((1 + r / n), n * t)
+
 
 def compound_interest_5(p, r, n, t):
-    return reduce(lambda acc, _: acc * (1 + r/n), range(n*t), p)
+    return reduce(lambda acc, _: acc * (1 + r / n), range(n * t), p)
 
 
 class TestCompoundInterest:
